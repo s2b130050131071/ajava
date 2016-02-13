@@ -18,7 +18,7 @@ public class CheckDetails extends HttpServlet{
 		
 		if(uname.equals("Krut")){
 			if(password.equals("pass")){
-				response.sendRedirect("Authenticated?uname=Krut");
+				response.sendRedirect("Authenticated?uname="+uname);
 			}else{
 				response.sendRedirect("loginForm.htm");
 			}
